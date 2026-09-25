@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <input type="text" placeholder="Ingrese su nombre">
+    <input type="email" placeholder="Ingrese su correo electrónico" required>
+    <input type="password" placeholder="Ingrese su contraseña" required>
+    <input type="number" placeholder="Ingrese su edad">
+    <input type="date" placeholder="Ingrese su fecha de nacimiento">    
+    <input type="checkbox" id="terminos" name="terminos">
+    <label for="terminos">Acepto los términos y condiciones</label>
+
+    <input type="radio" id="opcion1" name="opciones" value="opcion1">
+    <label for="opcion1">Opción 1</label>
+
+    <input type="radio" id="opcion2" name="opciones" value="opcion2">
+    <label for="opcion2">Opción 2</label>
+    
+    <input type="file" id="archivo" name="archivo">
+
+    <input type="color" value="Enviar">
+
+    <input type="range" value="Enviar" min="10" max="50">
+
+
+<select>
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+    <option value="opcion3">Opción 3</option>
+</select>
+
+<textarea placeholder="Ingrese su mensaje"></textarea>  
+<button type="submit">Enviar</button>
+
+</form>
+
+
+<form>
+  <label for="usuario">Usuario:</label>
+  <input type="text" id="usuario" name="usuario" required minlength="4">
+ 
+  <label for="edad">Edad:</label>
+  <input type="number" id="edad" name="edad" min="18" max="99">
+ 
+  <label for="carrera">Carrera:</label>
+  <select id="carrera" name="carrera">
+    <option value="sistemas">Ingeniería de Sistemas</option>
+    <option value="industrial">Ingeniería Industrial</option>
+  </select>
+ 
+  <p>Sexo:</p>
+  <input type="radio" id="f" name="sexo" value="f"><label for="f">Femenino</label>
+  <input type="radio" id="m" name="sexo" value="m"><label for="m">Masculino</label>
+ 
+  <label for="comentarios">Comentarios:</label>
+  <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+ 
+  <input type="checkbox" id="terminos" name="terminos" required>
+  <label for="terminos">Acepto los términos y condiciones</label>
+ 
+  <button type="submit">Registrarme</button>
+</form>
+
+
+</body>
+</html>

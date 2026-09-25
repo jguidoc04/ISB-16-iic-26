@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+
+    <h1>Ana Martínez</h1>
+<p>Estudiante de <strong>Ingeniería de Sistemas</strong>.</p>
+ 
+<img src="perfil.jpg" alt="Foto de perfil de Ana Martínez" width="200">
+ 
+<p>Sígueme en:
+  <a href="https://github.com/anamartinez" target="_blank">GitHub</a>
+</p>
+ 
+<h2>Habilidades</h2>
+<ul>
+  <li>HTML y CSS</li>
+  <li>Java</li>
+  <li>Bases de datos</li>
+</ul>
+ 
+<h2>Idiomas (por nivel)</h2>
+<ol>
+  <li>Español</li>
+  <li>Inglés</li>
+</ol>
+
+<table border="1">
+  <caption>Horario de clases - Semestre I</caption>
+  <thead>
+    <tr>
+      <th>Hora</th>
+      <th>Lunes</th>
+      <th>Miércoles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:00 - 10:00</td>
+      <td colspan="2">Arquitectura de Computadores</td>
+    </tr>
+    <tr>
+      <td>10:00 - 12:00</td>
+      <td rowspan="2">Programación</td>
+      <td>Bases de Datos</td>
+    </tr>
+    <tr>
+      <td>12:00 - 14:00</td>
+      <td>Bases de Datos</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<form action="/enviar-contacto" method="POST">
+  <fieldset>
+    <legend>Datos de contacto</legend>
+ 
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+ 
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo">
+  </fieldset>
+ 
+  <button type="submit">Enviar</button>
+</form>
+
+    
+</body>
+</html>
