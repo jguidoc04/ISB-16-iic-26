@@ -1,0 +1,46 @@
+       
+       * {
+        background-color: lightblue;
+       }
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            font-size: 18px;
+            letter-spacing: 15px;
+            padding: 10px;
+        }
+
+        p::first-letter {
+            font-size: 24px;
+            color: #ff0000;
+        }
+
+        button:hover {
+            color: #0000ff;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            text-align: center;
+        }
+
+        #titulo-principal {
+            color: #272727;
+        }
+
+        .titulo {
+            background-color: (122, 122, 122);
+        }
+
+
+        .noto-sans-syriac-western> {
+  font-family: "Noto Sans Syriac Western", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
