@@ -141,7 +141,6 @@ cafe-byte/
 
 ☐ Existe una carpeta llamada `img`.
 
-☐ Se ha guardado al menos una imagen dentro de `img`.
 
 ---
 
@@ -534,10 +533,7 @@ contacto.html
 agregue:
 
 ```html
-<link
-    rel="stylesheet"
-    href="css/estilos.css"
->
+<link rel="stylesheet" href="css/estilos.css">
 ```
 
 Las tres páginas deben utilizar la misma hoja CSS.
@@ -912,29 +908,6 @@ uno debajo del otro.
 
 ---
 
-# Paso 13. Personalización obligatoria
-
-## Objetivo
-
-Demostrar que el estudiante comprende el código y puede modificarlo.
-
-El estudiante debe realizar las siguientes modificaciones:
-
-☐ Cambiar la paleta de colores.
-
-☐ Cambiar el nombre **Café Byte** por otro nombre creativo.
-
-☐ Agregar al menos una imagen propia o de uso permitido.
-
-☐ Agregar un cuarto producto al menú.
-
-☐ Agregar una nueva sección en `index.html`.
-
-☐ Agregar al menos una propiedad CSS que no se encuentre en el código base.
-
-☐ Mantener funcionando la navegación entre todas las páginas.
-
----
 
 # Comprobación final de la práctica
 
@@ -951,420 +924,80 @@ El estudiante debe realizar las siguientes modificaciones:
 
 ---
 
-# 3. Criterio de evaluación — Práctica guiada
 
-La práctica guiada tendrá un valor de **40 puntos**.
-
-| Criterio | Descripción | Puntos |
-|---|---|---:|
-| Estructura HTML | Uso correcto de HTML5 y etiquetas solicitadas. | 8 |
-| Navegación | Los enlaces conectan correctamente las tres páginas. | 5 |
-| Contenido | Imágenes, listas, productos y formulario completos. | 6 |
-| CSS externo | Las tres páginas utilizan correctamente `estilos.css`. | 5 |
-| Estilos y modelo de caja | Uso correcto de color, tipografía, margin, padding, border y clases. | 6 |
-| Flexbox y responsive | Distribución flexible y media query funcional. | 5 |
-| Organización y personalización | Archivos ordenados y modificaciones propias. | 5 |
-| **TOTAL** | | **40 puntos** |
-
----
 
 # 4. TAREA  
 # Sitio web de un emprendimiento
 
 Esta actividad se realiza **después de completar la práctica guiada**.
-
 La tarea será individual.
-
 El estudiante **no debe copiar directamente Café Byte**, ni utilizar exactamente el mismo contenido o diseño.
 
----
+## Enunciado
 
-# Situación
+Desarrolle una **landing page**, es decir, una página web de presentación, para una tienda de discos ficticia llamada **Vinilo Retro**.
 
-Seleccione un emprendimiento real o ficticio.
+La página debe presentar la tienda, mostrar algunos discos destacados y facilitar que los visitantes encuentren la información de contacto. Utilice HTML para organizar el contenido y CSS para definir los colores, tamaños, espacios y distribución de los elementos.
 
-Algunas posibilidades:
+El sitio debe ser sencillo, atractivo y adaptarse a computadoras y celulares. Puede utilizar imágenes propias o imágenes gratuitas. Los discos y sus precios pueden ser ficticios.
 
-- Tienda de ropa.
-- Gimnasio.
-- Veterinaria.
-- Librería.
-- Restaurante.
-- Barbería.
-- Salón de belleza.
-- Empresa tecnológica.
-- Taller automotriz.
-- Agencia de viajes.
-- Academia.
-- Tienda de videojuegos.
-- Cafetería.
-- Otro aprobado por el docente.
+### ¿Qué es una landing page?
+Una landing page, o página de aterrizaje, es una página web diseñada para presentar un producto, servicio o negocio y guiar al visitante hacia una acción específica, como comprar, registrarse, solicitar información o contactar al negocio.
+Generalmente incluye un título llamativo, una descripción breve, imágenes y un botón de llamada a la acción, como «Ver productos» o «Contáctanos».
 
-El objetivo será desarrollar un **mini-sitio web informativo utilizando únicamente HTML y CSS**.
+Ejemplo: una landing page de un gimnasio presenta sus instalaciones, los planes de entrenamiento y los beneficios de inscribirse. Incluye un botón «Reservar una clase gratuita» para motivar al visitante a conocer el gimnasio.
 
----
+Pueden buscar ejemplos de referencia. Les voy a dejar sitios de referencia:
+* [Notion](https://www.notion.com/es-es)
+* [UISIL sitio principal](https://uisil.ac.cr)
+* [Apple: AirPods Pro](https://www.apple.com/es/airpods-pro/)
 
-# Archivos mínimos requeridos
 
-El proyecto deberá contener como mínimo:
+## Secciones de la página
 
-```text
-mi-emprendimiento/
-│
-├── index.html
-├── servicios.html
-├── galeria.html
-├── contacto.html
-│
-├── css/
-│   └── estilos.css
-│
-└── img/
-    ├── imagen1.jpg
-    ├── imagen2.jpg
-    └── imagen3.jpg
-```
+| Sección | Contenido solicitado |
+|---|---|
+| Encabezado | Nombre de la tienda y menú con enlaces a Inicio, Discos y Contacto. |
+| Inicio | Título de bienvenida, descripción breve de la tienda, imagen y botón «Ver discos». |
+| Discos | Tres tarjetas de discos. Cada tarjeta debe incluir portada, título del álbum, artista, género musical y precio. |
+| Contacto | Dirección ficticia, teléfono y horario de atención. |
+| Pie de página | Nombre de la tienda, año y nombre del estudiante. |
 
----
+## Tabla de requerimientos
 
-# Requisitos obligatorios de HTML
+| Código | Requerimiento | Criterio de cumplimiento |
+|---|---|---|
+| R01 | Crear la estructura del sitio en HTML. | Incluye las etiquetas `header`, `nav`, `main`, `section` y `footer`. |
+| R02 | Utilizar una hoja de estilos externa. | El archivo HTML está vinculado con `css/estilos.css`. |
+| R03 | Implementar el menú de navegación. | Los enlaces llevan a las secciones de la misma página mediante sus identificadores `id`. |
+| R04 | Diseñar la sección de inicio. | Contiene título, descripción, imagen y un enlace con apariencia de botón que lleva a Discos. |
+| R05 | Mostrar tres discos destacados. | Cada tarjeta contiene portada, título del álbum, artista, género musical y precio. |
+| R06 | Aplicar estilos básicos. | Utiliza colores, tipografía, márgenes, rellenos y bordes redondeados. |
+| R07 | Agregar un efecto al pasar el cursor. | El botón o los enlaces cambian de color mediante `:hover`. |
+| R08 | Adaptar el diseño a celulares. | Utiliza una media query para colocar las tarjetas en una columna y evitar desplazamiento horizontal. |
+| R09 | Incorporar imágenes accesibles. | Todas las imágenes incluyen un atributo `alt` descriptivo. |
 
-☐ Cuatro páginas HTML como mínimo.
+## Requerimientos de entrega
 
-☐ Menú de navegación funcional presente en todas las páginas.
+- Crear un archivo **`index.html`**.
+- Crear una carpeta **`css`** con el archivo **`estilos.css`**.
+- Guardar las imágenes dentro de una carpeta **`img`**.
+- Utilizar únicamente **HTML y CSS**, sin frameworks.
+- La práctica consiste en una página de presentación; no requiere carrito de compras, pagos ni JavaScript.
+- Entregar la carpeta completa del proyecto en un archivo **ZIP**.
+- Verificar que la página abra correctamente, que se visualicen las imágenes y que funcionen los enlaces del menú.
 
-☐ Uso de:
+* En la entrega van subir un mismo comprimido tanto la practica guiada como la tarea, la cual es esta segunda sección que si deben realizar por ustedes mismos.
 
-```html
-<header>
-<nav>
-<main>
-<section>
-<footer>
-```
+## Tabla de evaluación
 
-☐ Utilizar al menos dos niveles de encabezados.
-
-Por ejemplo:
-
-```html
-<h1>
-<h2>
-```
-
-☐ Incluir párrafos descriptivos escritos por el estudiante.
-
-☐ Incluir una lista ordenada o no ordenada.
-
-☐ Utilizar mínimo tres imágenes.
-
-☐ Todas las imágenes deben utilizar el atributo:
-
-```html
-alt
-```
-
-☐ Agregar al menos un enlace externo.
-
-Debe abrirse en una nueva pestaña utilizando:
-
-```html
-target="_blank"
-```
-
-☐ Crear un formulario de contacto.
-
-Debe contener como mínimo:
-
-```text
-Nombre
-Correo
-Asunto o motivo
-Mensaje
-Botón
-```
-
-☐ Crear una sección de productos o servicios.
-
-Debe contener mínimo:
-
-```text
-4 elementos
-```
-
----
-
-# Requisitos obligatorios de CSS
-
-☐ Una sola hoja de estilos externa enlazada desde todas las páginas.
-
-☐ Paleta de mínimo tres colores coherentes.
-
-☐ Definir tipografía para:
-
-```css
-body
-```
-
-☐ Utilizar clases CSS creadas por el estudiante.
-
-☐ Utilizar:
-
-```css
-margin
-padding
-```
-
-☐ Utilizar:
-
-```css
-border
-```
-
-o:
-
-```css
-border-radius
-```
-
-☐ Utilizar la pseudoclase:
-
-```css
-:hover
-```
-
-en enlaces, botones o tarjetas.
-
-☐ Utilizar:
-
-```css
-Flexbox
-```
-
-o:
-
-```css
-Grid
-```
-
-en al menos una sección.
-
-☐ Crear un diseño responsive utilizando:
-
-```css
-@media
-```
-
-☐ Las imágenes deben adaptarse al tamaño de su contenedor.
-
-Ejemplo:
-
-```css
-img {
-    max-width: 100%;
-    height: auto;
-}
-```
-
----
-
-# Condiciones de la tarea
-
-☐ No utilizar Bootstrap.
-
-☐ No utilizar Tailwind.
-
-☐ No utilizar plantillas descargadas.
-
-☐ No utilizar constructores visuales.
-
-☐ No utilizar JavaScript.
-
-La evaluación corresponde solamente a:
-
-```text
-HTML + CSS
-```
-
-☐ No copiar exactamente el ejemplo de Café Byte.
-
-☐ Los enlaces deben funcionar.
-
-☐ Las imágenes deben cargar correctamente.
-
-☐ El proyecto debe funcionar al abrirlo desde su propia carpeta.
-
-☐ Las rutas deben ser relativas.
-
-☐ Se debe mantener una estructura clara de carpetas.
-
----
-
-# Entrega
-
-El estudiante deberá entregar una carpeta comprimida en formato:
-
-```text
-.zip
-```
-
-Nombre recomendado:
-
-```text
-Apellido_Nombre_Tarea_HTML_CSS.zip
-```
-
-La entrega debe incluir:
-
-☐ Carpeta completa del proyecto.
-
-☐ Los cuatro archivos HTML o más.
-
-☐ Archivo:
-
-```text
-css/estilos.css
-```
-
-☐ Todas las imágenes utilizadas.
-
-☐ Captura de pantalla de la página principal en versión escritorio.
-
-☐ Captura de pantalla mostrando el sitio en ancho reducido o dispositivo móvil.
-
----
-
-# 5. Criterio de evaluación — Tarea
-
-La tarea tendrá un valor de **100 puntos**.
-
-| Criterio | Excelente | Parcial | Insuficiente | Valor |
-|---|---|---|---|---:|
-| **Estructura HTML y semántica** | Todas las páginas poseen estructura correcta y uso coherente de etiquetas semánticas. | Presenta algunos errores menores. | Estructura incompleta o errores importantes. | **20 pts** |
-| **Navegación y enlaces** | Todas las páginas están conectadas y todos los enlaces funcionan. | Uno o dos enlaces presentan errores. | La navegación está incompleta o no funciona. | **10 pts** |
-| **Contenido y requisitos HTML** | Cumple imágenes, listas, secciones, servicios y formulario solicitados. | Faltan uno o dos elementos. | Faltan varios requisitos. | **15 pts** |
-| **Diseño visual con CSS** | Existe coherencia en colores, tipografía, espaciado, bordes y presentación. | Diseño funcional pero poco consistente. | CSS mínimo, desorganizado o con errores importantes. | **20 pts** |
-| **Flexbox o Grid** | La distribución se utiliza correctamente y mejora la organización visual. | Se utiliza con algunos problemas. | No se utiliza o no funciona. | **10 pts** |
-| **Responsive** | `@media` adapta correctamente el sitio a pantallas pequeñas. | Existe adaptación con algunos problemas. | No existe adaptación responsive funcional. | **10 pts** |
-| **Organización técnica** | Carpetas, nombres, rutas y archivos están correctamente organizados. | Presenta problemas menores de organización. | Existen rutas rotas, archivos faltantes o desorden. | **10 pts** |
-| **Personalización y presentación** | Se evidencia trabajo propio, coherencia y cuidado visual. | Personalización limitada. | Copia directa o personalización insuficiente. | **5 pts** |
-| **TOTAL** | | | | **100 pts** |
-
----
-
-# Reglas de evaluación
-
-☐ Un sitio que no abra correctamente no podrá obtener la totalidad de los puntos correspondientes a los criterios afectados.
-
-☐ Los archivos faltantes afectarán los criterios relacionados.
-
-☐ El uso de frameworks o herramientas no permitidas no será considerado como evidencia del aprendizaje solicitado.
-
-☐ Los requisitos deberán poder verificarse directamente en el código fuente.
-
-☐ También deberán poder verificarse ejecutando el proyecto en el navegador.
-
-☐ Una buena apariencia visual no sustituye una estructura HTML correcta.
-
-☐ El cumplimiento técnico tendrá prioridad sobre elementos únicamente decorativos.
-
----
-
-# Lista de verificación antes de entregar
-
-☐ Abrí `index.html` desde la carpeta del proyecto.
-
-☐ Todo el contenido carga correctamente.
-
-☐ Probé todos los enlaces del menú.
-
-☐ Ninguna imagen muestra el ícono de archivo roto.
-
-☐ Revisé visualmente el formulario.
-
-☐ Reduje el ancho del navegador.
-
-☐ El diseño se adapta correctamente.
-
-☐ Revisé que no existan rutas como:
-
-```text
-C:\Users\
-```
-
-☐ Utilicé rutas relativas.
-
-☐ Comprimí la carpeta completa.
-
-☐ No comprimí únicamente los archivos HTML.
-
----
-
-# 6. Preguntas de cierre
-
-### 1. ¿Cuál es la diferencia entre HTML y CSS?
-
-____________________________________________________________________
-
-____________________________________________________________________
-
----
-
-### 2. ¿Qué ventaja tiene utilizar una hoja CSS externa?
-
-____________________________________________________________________
-
-____________________________________________________________________
-
----
-
-### 3. ¿Cuál es la diferencia entre `margin` y `padding`?
-
-____________________________________________________________________
-
-____________________________________________________________________
-
----
-
-### 4. ¿Para qué sirve una clase CSS?
-
-____________________________________________________________________
-
-____________________________________________________________________
-
----
-
-### 5. ¿Qué problema resuelve Flexbox?
-
-____________________________________________________________________
-
-____________________________________________________________________
-
----
-
-### 6. ¿Qué hace una media query?
-
-____________________________________________________________________
-
-____________________________________________________________________
-
----
-
-### 7. ¿Por qué se recomienda utilizar rutas relativas en un proyecto web?
-
-____________________________________________________________________
-
-____________________________________________________________________
-
----
-
-# Resumen de evaluación
-
-| Actividad | Puntaje |
+| Criterio | Puntaje |
 |---|---:|
-| Práctica guiada HTML + CSS | **40 puntos** |
-| Tarea: sitio web de emprendimiento | **100 puntos** |
+| Estructura HTML y secciones completas | 5 |
+| Menú y botón con enlaces funcionales | 3 |
+| Tarjetas de discos completas | 4 |
+| Diseño CSS y uso de Flexbox | 4 |
+| Adaptación a celulares | 2 |
+| Organización de archivos e imágenes con `alt` | 2 |
+| **Total** | **20 puntos** |
 
-La **práctica guiada** sirve para aprender y aplicar los conceptos paso a paso.
-
-La **tarea** busca comprobar que el estudiante puede crear por sí mismo un proyecto nuevo aplicando HTML y CSS.
