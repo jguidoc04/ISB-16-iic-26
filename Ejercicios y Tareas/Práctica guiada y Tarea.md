@@ -927,7 +927,7 @@ uno debajo del otro.
 
 
 # 4. TAREA  
-# Sitio web de un emprendimiento
+# Sitio web para una tienda.
 
 Esta actividad se realiza **después de completar la práctica guiada**.
 La tarea será individual.
@@ -996,8 +996,8 @@ Pueden buscar ejemplos de referencia. Les voy a dejar sitios de referencia:
 | Estructura HTML y secciones completas | 5 |
 | Menú y botón con enlaces funcionales | 3 |
 | Tarjetas de discos completas | 4 |
-| Diseño CSS y uso de Flexbox | 4 |
-| Adaptación a celulares | 2 |
 | Organización de archivos e imágenes con `alt` | 2 |
+| Cumple con Landing page | 2 |
+| Usa hoja de estilo css creada por el mismo estudiante| 4 |
 | **Total** | **20 puntos** |
 
