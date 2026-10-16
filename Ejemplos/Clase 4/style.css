@@ -1,0 +1,28 @@
+.destacado {
+  color: #1d4ed8;
+  background-color: #dbeafe;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+
+ table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
