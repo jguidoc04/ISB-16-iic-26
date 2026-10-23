@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Canciones</title>
+     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/canciones.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <header class="encabezado">
+        <div>
+          <h1>Mis Canciones</h1>
+          <p>Bienvenido <span id="nombreUsuario"></span></p>
+        </div>
+         <button type="button" id="btnCerrarSesion">Cerrar Sesión </button>
+      </header>
+      <main>
+
+        <section>
+        <button type="button" id="btnAgregarCancion">Agregar Cancion</button>
+
+        </section>
+
+        <section id = "seccion-agregar-cancion"class="oculto">
+          <h2>Agregar canción</h2>
+          <form id="formAgregarCancion">
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" required />
+
+            <label for="artista">Artista</label>
+            <input type="text" id="artista" required />
+
+            <label for="genero">Genero</label>
+            <input type="text" id="genero" required />
+
+            <button type="submit">Guardar Canción</button>
+            <button type="button" id="CancelarGuardado">Cancelar</button>
+          </form>
+        </section>
+
+        <section id="listado-canciones" class="tarjeta">
+          <h2>Lista de canciones</h2>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Titulo</th>
+                  <th>Artista</th>
+                  <th>Genero</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="tablaCanciones"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    ' '
+  </body>
+</html>

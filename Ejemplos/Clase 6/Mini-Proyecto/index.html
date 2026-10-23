@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/login.js" defer></script>
+  </head>
+  <body>
+    <main class="contenedor-login">
+      <section class="tarjeta">
+        <h1>Iniciar Sesión</h1>
+        <p>Ingresa tus credenciales y guarda tus canciones</p>
+
+        <form id="formLogin" >
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" required autocomplete="username" />
+          <label for="contrasenna">Contraseña</label>
+          <input
+            type="password"
+            id="contrasenna"
+            required
+            autocomplete="current-password"
+          />
+          <button type="submit">Ingresar</button>
+        </form>
+        <p id="mensajeLogin"></p>
+      </section>
+    </main>
+  </body>
+</html>
